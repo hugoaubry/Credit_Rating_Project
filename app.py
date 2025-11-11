@@ -1,5 +1,12 @@
 import os
 import streamlit as st
+
+import sys, os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))  # ✅ ligne à ajouter
+
+import streamlit as st
+from credit_core import creer_zip_etats_financiers
+
 from credit_core import creer_zip_etats_financiers
 
 st.set_page_config(page_title="Données financières", page_icon="📊", layout="centered")
